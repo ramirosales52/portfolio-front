@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.circles {
+  padding: 30px 0;
+  display: flex;
+  gap: 20px;
+  width: auto;
+}
