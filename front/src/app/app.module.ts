@@ -12,6 +12,10 @@ import { XpComponent } from './components/xp/xp.component';
 import { EduComponent } from './components/edu/edu.component';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectComponent } from './components/proyect/proyect.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginHeaderComponent } from './components/login-header/login-header.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +26,16 @@ import { ProyectComponent } from './components/proyect/proyect.component';
     XpComponent,
     EduComponent,
     HysComponent,
-    ProyectComponent
+    ProyectComponent,
+    HomeComponent,
+    LoginComponent,
+    LoginHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({
-      
-    })
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
