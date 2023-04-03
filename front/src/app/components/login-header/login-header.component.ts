@@ -7,11 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-header.component.css']
 })
 export class LoginHeaderComponent {
-  constructor(private router:Router) {
+  constructor() {
 
   }
 
-  atras() {
-    this.router.navigate(['/'])
-  }
 }
